@@ -42,45 +42,50 @@
 		display: none;
 	    position: absolute;
 	    right: 0;
-	    top: 120px;
-	    width: 100%;
+		top: 0;
+		width: 100%;
+		min-height: 550px;
+		height: 100vh;
+		background-color: #191B22;
 	}
 
-	#menu-icon:checked ~ .menu {
-		display: block;
-	    margin: 0;
+	.menu.on {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		z-index: 999;
 	}
 
 	.menu ul {
 		flex-direction: column;
-		width: 95%;
+		align-content: center;
+		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 
-		padding: 10px 0;
-	    background: #000;
+		padding: 50px 0;
 		opacity: 0.95;
 	}
 
 	.menu a {
 		display: block;
-		font-size: 16px;
-		font-weight: 300;
-		padding: 12px;
-		background: #000;
+		font-size: 17px;
+		font-weight: 400;
+		padding: 15px;
 		opacity: 0.95;
 		color: #fff;
+		text-transform: uppercase;
 
 		margin: 0;
 	}
 
 	.menu a:hover {
-		background: #232323;
+		background: #262A32;
 		color: #fff;
 		border-bottom: none;
 	}
 
-	label.toggleMenu {
+	button.toggleMenu {
 		display: block;
 	}
 

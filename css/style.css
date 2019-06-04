@@ -98,15 +98,18 @@ input[type="checkbox"] {
 	display: none;
 }
 
-label.toggleMenu {
+button.toggleMenu {
 	display: none;
-	font-size: 26px;
-	color: #fff;
-	padding: 1px 8px 3px 8px;
-	border: 2px solid #fff;
-	border-radius: 3px;
+	outline: none;
 	cursor: pointer;
 	position: relative;
+	z-index: 9999;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+	background-color: #fff;
+	height: 3px;
 }
 
 .slogan {

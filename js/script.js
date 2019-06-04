@@ -11,8 +11,17 @@ $(function() {
 		$('.project').show(500);
 	});
 
+	$('.toggleMenu').click(function() {
+		$('.menu').toggleClass('on');
+		$('header .hamburger').toggleClass('is-active');
+	});
+
 	$(".menu").on("click", "a", function (event) {
 		event.preventDefault();
+
+		$('.menu').removeClass('on');
+		$('header .hamburger').removeClass('is-active');
+
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
