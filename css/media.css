@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 1000px) {
 	.menu {
-		display: none;
+		display: flex;
 	    position: absolute;
 	    right: 0;
 		top: 0;
@@ -47,13 +47,16 @@
 		min-height: 550px;
 		height: 100vh;
 		background-color: #191B22;
-	}
 
-	.menu.on {
-		display: flex;
 		align-items: center;
 		margin: 0;
 		z-index: 999;
+		transition: all 0.4s ease-in-out;
+		transform: translate(-100%);
+	}
+
+	.menu.on {
+		transform: translate(0);
 	}
 
 	.menu ul {
