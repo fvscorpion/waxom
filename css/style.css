@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 }
@@ -13,6 +17,10 @@ p {
 
 a {
 	text-decoration: none;
+}
+
+.section-head p {
+	animation-delay: 0.4s;
 }
 
 .title {
@@ -508,6 +516,7 @@ button.toggleMenu {
 
 .counter-card {
 	text-align: center;
+	min-width: 130px;
 }
 
 .counter__number {
@@ -522,6 +531,7 @@ button.toggleMenu {
 
 .counter__number p {
 	font-weight: 200;
+	display: none;
 }
 
 .counter__text {

@@ -218,6 +218,10 @@
 	.partners-container {
 		padding: 80px 0;
 	}
+
+	.counter__number p {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 720px) {
